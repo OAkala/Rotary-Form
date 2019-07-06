@@ -1,12 +1,14 @@
 /* 
-   ************************************************************************************************************
+   *************************************************************************************************
    Program: PestProblem.java
    Repository Name: Rotary-Form
    Date Created: 03-Jul-19
-   Program Description: This is a field of the rotary form that holds the data on what pests were of concern in that unit
-   
-   ************************************************************************************************************
+   Program Description: This is a field of the rotary form that holds the data on what pests were
+   of concern in that unit
+
+   *************************************************************************************************
 */
+
 import java.util.*;
 
 public class PestProblem {
@@ -46,7 +48,7 @@ public class PestProblem {
     public String toString() {
         StringBuilder str = new StringBuilder();
         for (boolean bool : getPest()
-             ) {
+        ) {
             str.append(bool);
             str.append(",");
         }
