@@ -11,16 +11,23 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class RotaryForm extends RotaryFormTable {
-    private String property_Name;
+    private String propertyName;
     private Date dateCreated;
 
     public RotaryForm() {
         dateCreated = new Date();
     }
 
-    public RotaryForm(String property_Name) {
-        this.property_Name = property_Name;
+    public RotaryForm(String propertyName) {
+        this.propertyName = propertyName;
         dateCreated = new Date();
+    }
+
+    public RotaryForm(String propertyName, String unit, String keyHome, String pestLevel,
+                      String houseKeeping) {
+        this.propertyName = propertyName;
+        dateCreated = new Date();
+        table.add(new RotaryFormRecord(unit, keyHome, pestLevel, houseKeeping));
     }
 
     public String getFormName() {
@@ -28,11 +35,11 @@ public class RotaryForm extends RotaryFormTable {
     }
 
     public String getProperty_Name() {
-        return property_Name;
+        return propertyName;
     }
 
     public void setProperty_Name(String property_Name) {
-        this.property_Name = property_Name;
+        this.propertyName = property_Name;
     }
 
     public Date getDateCreated() {
@@ -42,5 +49,13 @@ public class RotaryForm extends RotaryFormTable {
     public String DateToString() {
         SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
         return dateFormat.format(getDateCreated());
+    }
+
+    public String toString() {
+        StringBuilder str = new StringBuilder();
+        str.append(getProperty_Name()).append(System.lineSeparator());
+        str.append(getDateCreated()).append(System.lineSeparator()).append(System.lineSeparator());
+        str.append(super.toString());
+        return str.toString();
     }
 }
