@@ -11,20 +11,18 @@ import java.lang.reflect.*;
 import java.util.*;
 
 public class RotaryFormTable {
-    private ArrayList<RotaryFormRecord> table = new ArrayList();
+    protected ArrayList<RotaryFormRecord> table = new ArrayList<>();
 
     public RotaryFormTable() {
 
     }
 
-    public RotaryFormTable(String unitAddress, String keyHome, String pestLevel,
-                           String houseKeeping) {
-        table.add(new RotaryFormRecord(unitAddress, keyHome, pestLevel,
-                houseKeeping));
+    public RotaryFormTable(String unit, String keyHome, String pestLevel, String houseKeeping) {
+        table.add(new RotaryFormRecord(unit, keyHome, pestLevel, houseKeeping));
     }
 
     public RotaryFormRecord getRecord(int index) {
-        return (RotaryFormRecord) table.get(index);
+        return table.get(index);
     }
 
     public void addRecord() {
@@ -65,7 +63,7 @@ public class RotaryFormTable {
         return str.toString().trim();
     }
 
-    protected boolean checkRecordField(int index) throws Exception {
+    private boolean checkRecordField(int index) throws Exception {
         if (!table.isEmpty()) {
             RotaryFormRecord record = getRecord(index);
             for (Field field : record.getClass().getDeclaredFields()) {
