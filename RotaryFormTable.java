@@ -67,7 +67,7 @@ public class RotaryFormTable {
         if (!table.isEmpty()) {
             RotaryFormRecord record = getRecord(index);
             for (Field field : record.getClass().getDeclaredFields()) {
-                if (!(field.getName().equals("STRING_FIELDS") || field.getName().equals("followup"))) {
+                if (!field.getName().equals("followup"))) {
                     StringBuilder getter = new StringBuilder();
                     getter.append("get");
                     getter.append(field.getName().substring(0, 1).toUpperCase());
