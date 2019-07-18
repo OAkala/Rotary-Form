@@ -15,4 +15,4 @@ Please adhere to all style guidelines as failure to do so will result in denied 
 
 5.  Add space after any comma.
 
-6.  USE GENERAL GOOD CODING PRACTICES.
+6.  USE GENERAL GOOD CODING PRACTICES. Reference the [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
