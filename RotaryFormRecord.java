@@ -5,7 +5,6 @@
    Date Created: 03-Jul-19
    Program Description: This class is extends the PestProblem class and contains all the
    necessary data required in a record on the form.
-   
    *************************************************************************************************
 */
 
