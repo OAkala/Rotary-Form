@@ -1,9 +1,10 @@
 /*
    *************************************************************************************************
-   Program: "INSERT CLASS NAME".java
+   Program: RotaryFormRecord.java
    Repository Name: Rotary-Form
-   Date Created: "INSERT DATE CREATED"
-   Program Description: "INSERT PROGRAM DESCRIPTION"
+   Date Created: 03-Jul-19
+   Program Description: This class is extends the PestProblem class and contains all the
+   necessary data required in a record on the form.
    *************************************************************************************************
 */
 package main;

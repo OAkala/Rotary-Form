@@ -1,19 +1,10 @@
 /*
-   **********************************************************************************************
+   *************************************************************************************************
    Program: RotaryFormTable.java
-   Name: Olalekan AKala
-   VUnetID: akalaoa
-   Section: 03
-   Email: olalekan.a.akala@vanderbilt.edu
-   Class: CS 1101 - Vanderbilt University
-   Section: 03 TR 11:00am
-   Date: 03-Jul-19
-   Honor statement: I attest that I understand the honor code for this class and have neither given 
-                    nor received any unauthorized aid on this assignment.
-
-   Program Description:
-   
-   **********************************************************************************************
+   Repository Name: Rotary-Form
+   Date Created: 03-Jul-19
+   Program Description: This class holds all the records that are in a given form
+   *************************************************************************************************
 */
 package main;
 import java.lang.reflect.*;
