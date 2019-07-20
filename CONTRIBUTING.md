@@ -1,4 +1,4 @@
-# Making Contriubutions
+# Making Contributions
   Hello, please follow these guidelines when making commits or pull requests
 
   Read the following link for how to start making commits: https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
