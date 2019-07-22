@@ -11,7 +11,9 @@ Please adhere to all style guidelines as failure to do so will result in denied 
 
 4.  Put spaces around all operator symbols. That includes arithmetic operators and colons.
 
-![image](https://user-images.githubusercontent.com/52111209/61097297-dd4d7980-a428-11e9-808e-e6005504f964.png)
+```
+for (RotaryFormRecord record : table) {
+```
 
 5.  Add space after any comma.
 
